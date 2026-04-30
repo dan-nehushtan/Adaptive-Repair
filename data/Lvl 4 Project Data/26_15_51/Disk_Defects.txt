@@ -1,0 +1,70 @@
+[
+    {
+        "Layer number": 0,
+        "Number of defects": 5,
+        "Overextrusions": 5,
+        "Underextrusions": 0,
+        "Defect data": [
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    1092,
+                    3293,
+                    1280,
+                    3486
+                ],
+                "Box area (px)": 36284,
+                "Box aspect ratio": 0.9740932642487047
+            },
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.9,
+                "Defect coordinates": [
+                    2141,
+                    2183,
+                    2219,
+                    2256
+                ],
+                "Box area (px)": 5694,
+                "Box aspect ratio": 1.0684931506849316
+            },
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.9,
+                "Defect coordinates": [
+                    2040,
+                    1231,
+                    2139,
+                    1330
+                ],
+                "Box area (px)": 9801,
+                "Box aspect ratio": 1.0
+            },
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.9,
+                "Defect coordinates": [
+                    2145,
+                    1342,
+                    2210,
+                    1417
+                ],
+                "Box area (px)": 4875,
+                "Box aspect ratio": 0.8666666666666667
+            },
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.9,
+                "Defect coordinates": [
+                    2365,
+                    747,
+                    2493,
+                    826
+                ],
+                "Box area (px)": 10112,
+                "Box aspect ratio": 1.620253164556962
+            }
+        ]
+    }
+]

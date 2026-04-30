@@ -1,0 +1,202 @@
+[
+    {
+        "Layer number": 0,
+        "Number of defects": 16,
+        "Overextrusions": 1,
+        "Underextrusions": 15,
+        "Defect data": [
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.94,
+                "Defect coordinates": [
+                    1101,
+                    3317,
+                    1262,
+                    3478
+                ],
+                "Box area (px)": 25921,
+                "Box aspect ratio": 1.0
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.94,
+                "Defect coordinates": [
+                    1975,
+                    1924,
+                    2279,
+                    2218
+                ],
+                "Box area (px)": 89376,
+                "Box aspect ratio": 1.034013605442177
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    2520,
+                    1618,
+                    2678,
+                    1772
+                ],
+                "Box area (px)": 24332,
+                "Box aspect ratio": 1.025974025974026
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    2284,
+                    1765,
+                    2433,
+                    1915
+                ],
+                "Box area (px)": 22350,
+                "Box aspect ratio": 0.9933333333333333
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.92,
+                "Defect coordinates": [
+                    2953,
+                    1242,
+                    3055,
+                    1339
+                ],
+                "Box area (px)": 9894,
+                "Box aspect ratio": 1.0515463917525774
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.92,
+                "Defect coordinates": [
+                    2720,
+                    1418,
+                    2875,
+                    1574
+                ],
+                "Box area (px)": 24180,
+                "Box aspect ratio": 0.9935897435897436
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.89,
+                "Defect coordinates": [
+                    2436,
+                    1699,
+                    2503,
+                    1762
+                ],
+                "Box area (px)": 4221,
+                "Box aspect ratio": 1.0634920634920635
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.88,
+                "Defect coordinates": [
+                    2559,
+                    1545,
+                    2656,
+                    1635
+                ],
+                "Box area (px)": 8730,
+                "Box aspect ratio": 1.0777777777777777
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.88,
+                "Defect coordinates": [
+                    1763,
+                    2637,
+                    1822,
+                    2713
+                ],
+                "Box area (px)": 4484,
+                "Box aspect ratio": 0.7763157894736842
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.88,
+                "Defect coordinates": [
+                    2023,
+                    2769,
+                    2097,
+                    2807
+                ],
+                "Box area (px)": 2812,
+                "Box aspect ratio": 1.9473684210526316
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.88,
+                "Defect coordinates": [
+                    2906,
+                    1237,
+                    2959,
+                    1292
+                ],
+                "Box area (px)": 2915,
+                "Box aspect ratio": 0.9636363636363636
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.87,
+                "Defect coordinates": [
+                    3078,
+                    1245,
+                    3140,
+                    1302
+                ],
+                "Box area (px)": 3534,
+                "Box aspect ratio": 1.087719298245614
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.87,
+                "Defect coordinates": [
+                    1989,
+                    2187,
+                    2109,
+                    2311
+                ],
+                "Box area (px)": 14880,
+                "Box aspect ratio": 0.967741935483871
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.87,
+                "Defect coordinates": [
+                    2215,
+                    2773,
+                    2287,
+                    2810
+                ],
+                "Box area (px)": 2664,
+                "Box aspect ratio": 1.945945945945946
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.86,
+                "Defect coordinates": [
+                    3161,
+                    1111,
+                    3272,
+                    1222
+                ],
+                "Box area (px)": 12321,
+                "Box aspect ratio": 1.0
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.85,
+                "Defect coordinates": [
+                    1852,
+                    2780,
+                    1901,
+                    2806
+                ],
+                "Box area (px)": 1274,
+                "Box aspect ratio": 1.8846153846153846
+            }
+        ]
+    }
+]

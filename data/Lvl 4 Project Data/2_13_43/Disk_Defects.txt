@@ -1,0 +1,70 @@
+[
+    {
+        "Layer number": 0,
+        "Number of defects": 5,
+        "Overextrusions": 0,
+        "Underextrusions": 5,
+        "Defect data": [
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.9,
+                "Defect coordinates": [
+                    2832,
+                    801,
+                    2908,
+                    853
+                ],
+                "Box area (px)": 3952,
+                "Box aspect ratio": 1.4615384615384615
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.89,
+                "Defect coordinates": [
+                    2659,
+                    803,
+                    2733,
+                    856
+                ],
+                "Box area (px)": 3922,
+                "Box aspect ratio": 1.3962264150943395
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.86,
+                "Defect coordinates": [
+                    3028,
+                    802,
+                    3085,
+                    837
+                ],
+                "Box area (px)": 1995,
+                "Box aspect ratio": 1.6285714285714286
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.86,
+                "Defect coordinates": [
+                    1736,
+                    1652,
+                    1777,
+                    1701
+                ],
+                "Box area (px)": 2009,
+                "Box aspect ratio": 0.8367346938775511
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.86,
+                "Defect coordinates": [
+                    3214,
+                    800,
+                    3267,
+                    828
+                ],
+                "Box area (px)": 1484,
+                "Box aspect ratio": 1.8928571428571428
+            }
+        ]
+    }
+]

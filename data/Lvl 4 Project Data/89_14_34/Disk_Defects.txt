@@ -1,0 +1,154 @@
+[
+    {
+        "Layer number": 0,
+        "Number of defects": 12,
+        "Overextrusions": 1,
+        "Underextrusions": 11,
+        "Defect data": [
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.96,
+                "Defect coordinates": [
+                    2238,
+                    2206,
+                    2575,
+                    2540
+                ],
+                "Box area (px)": 112558,
+                "Box aspect ratio": 1.0089820359281436
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.94,
+                "Defect coordinates": [
+                    2713,
+                    1974,
+                    3004,
+                    2257
+                ],
+                "Box area (px)": 82353,
+                "Box aspect ratio": 1.028268551236749
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.94,
+                "Defect coordinates": [
+                    2724,
+                    1804,
+                    3634,
+                    2749
+                ],
+                "Box area (px)": 859950,
+                "Box aspect ratio": 0.9629629629629629
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    3273,
+                    1677,
+                    3485,
+                    1887
+                ],
+                "Box area (px)": 44520,
+                "Box aspect ratio": 1.0095238095238095
+            },
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    1079,
+                    3335,
+                    1232,
+                    3481
+                ],
+                "Box area (px)": 22338,
+                "Box aspect ratio": 1.047945205479452
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    2490,
+                    2126,
+                    3055,
+                    2693
+                ],
+                "Box area (px)": 320355,
+                "Box aspect ratio": 0.9964726631393298
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.92,
+                "Defect coordinates": [
+                    2722,
+                    1916,
+                    2862,
+                    2057
+                ],
+                "Box area (px)": 19740,
+                "Box aspect ratio": 0.9929078014184397
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.91,
+                "Defect coordinates": [
+                    2428,
+                    1454,
+                    3137,
+                    2161
+                ],
+                "Box area (px)": 501263,
+                "Box aspect ratio": 1.002828854314003
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.91,
+                "Defect coordinates": [
+                    3227,
+                    2354,
+                    3499,
+                    2622
+                ],
+                "Box area (px)": 72896,
+                "Box aspect ratio": 1.0149253731343284
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.89,
+                "Defect coordinates": [
+                    3120,
+                    1969,
+                    3199,
+                    2046
+                ],
+                "Box area (px)": 6083,
+                "Box aspect ratio": 1.025974025974026
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.89,
+                "Defect coordinates": [
+                    3098,
+                    2151,
+                    3602,
+                    2695
+                ],
+                "Box area (px)": 274176,
+                "Box aspect ratio": 0.9264705882352942
+            },
+            {
+                "Class": "Underextrusion",
+                "Confidence": 0.89,
+                "Defect coordinates": [
+                    2572,
+                    2324,
+                    2652,
+                    2400
+                ],
+                "Box area (px)": 6080,
+                "Box aspect ratio": 1.0526315789473684
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Layer number": 0,
+        "Number of defects": 1,
+        "Overextrusions": 1,
+        "Underextrusions": 0,
+        "Defect data": [
+            {
+                "Class": "Overextrusion",
+                "Confidence": 0.93,
+                "Defect coordinates": [
+                    1120,
+                    3247,
+                    1312,
+                    3436
+                ],
+                "Box area (px)": 36288,
+                "Box aspect ratio": 1.0158730158730158
+            }
+        ]
+    }
+]
