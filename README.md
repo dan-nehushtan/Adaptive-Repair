@@ -112,106 +112,16 @@ Adaptive Repair Strategies/
 │           ├── overlay_{sample}.png       #     Full overlay visualisation
 │           └── summary_{sample}.json      #     Per-sample summary
 │
-├── .vscode/launch.json                    # VS Code debug configurations
-├── requirements.txt
-├── README.md
-└── PROJECT_CONTEXT.md                     # In-depth project context document
+└── README.md                     # In-depth project context document
 ```
 
-### Repository-level structure
 
-```
-MECH5080-Team-Project/
-├── Machine Learning In Advanced Manufacturing/
-│   ├── Adaptive Repair Strategies/        # Main codebase (see above)
-│   ├── Individual Report/                 # LaTeX individual report
-│   │   ├── main.tex                       #   Report source
-│   │   ├── main.pdf                       #   Compiled output
-│   │   ├── Template - Individual.pdf      #   Submission template
-│   │   ├── figures/                       #   All report figures (fig1–fig18)
-│   │   ├── refs/                          #   references.bib, references_RIS.zip, make_ris.py
-│   │   ├── aux/                           #   LaTeX auxiliary files (regenerated on build)
-│   │   ├── build/                         #   Build logs (regenerated on build)
-│   │   └── old-docs/                      #   Archived drafts and previous year docs
-│   ├── CPP/                               # Contract Performance Plan
-│   ├── Ethics/                            # Ethics forms
-│   ├── Poster/                            # Project poster
-│   ├── Project Showcase/                  # Showcase slides and poster PDF
-│   ├── References/                        # EndNote library + key readings
-│   ├── Team Report/                       # Team report draft
-│   └── Meeting Log.docx
-├── course-docs/                           # Module handbook, lecture slides, cover page
-├── requirements.txt                       # Python dependencies for the pipeline
-├── README.md
-└── PROJECT_CONTEXT.md
-```
 
-**Note**: Camera `.bmp` images (~20 MB each, 3.0 GB total) are gitignored. All other data is tracked.
+**Note**: Camera `.bmp` images (3.0 GB total) are gitignored as well as YOLOv8_LSM.pt
 
 ## Quick Start
 
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Run the pipeline
-
-```bash
-cd "Machine Learning In Advanced Manufacturing/Adaptive Repair Strategies/src"
-
-# Process a single sample (using cached defect data)
-python pipeline.py --sample 1_13_35
-
-# Process a single sample with live YOLOv8 inference
-python pipeline.py --sample 1_13_35 --live
-
-# Process all 120 samples
-python pipeline.py --all
-
-# Show interactive plots
-python pipeline.py --sample 1_13_35 --show
-
-# Specify layer Z height
-python pipeline.py --sample 1_13_35 --z 0.4
-```
-
-### 3. Run the full CHAMP sequence
-
-The `champ_sequence.py` script orchestrates the complete real-world workflow:
-
-```bash
-cd "Machine Learning In Advanced Manufacturing/Adaptive Repair Strategies/src"
-
-# Full sequence: Print → Scan → Detect → Repair (sample 1)
-python champ_sequence.py --sample 1_13_35
-
-# With a specific camera image (skip scan step)
-python champ_sequence.py --sample 1_13_35 --image D:\photo.bmp
-
-# Custom confidence threshold
-python champ_sequence.py --sample 1_13_35 --conf 0.90
-```
-
-### 4. CHAMP machine live integration
-
-The `champ_live.py` script is designed for test-day use on the CHAMP machine:
-
-```bash
-cd "Machine Learning In Advanced Manufacturing/Adaptive Repair Strategies/src"
-
-# Watch a USB drive for new camera images
-python champ_live.py --watch D:\
-
-# Process a single image
-python champ_live.py --image path/to/photo.bmp
-
-# Process a folder of images
-python champ_live.py --folder path/to/images/
-```
-
-### 5. CHAMP Adaptive Process Monitor
+### 1. CHAMP Adaptive Process Monitor
 
 The `champ_adaptive_monitor.py` script integrates CHAMP process monitoring with **per-defect adaptive repair** across all 120 samples.
 
@@ -261,7 +171,7 @@ python champ_adaptive_monitor.py --conf 0.90 --z 0.8 --imgsz 2560
 
 **Note on YOLO non-determinism**: The v2 pipeline runs live YOLO inference rather than reading cached `Disk_Defects.txt`. Due to GPU non-determinism in Ultralytics, re-running inference produces slightly different detection counts (~62% exact match with original data, ±1–4 defects for the rest). See [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) Section 3.7 for details.
 
-### 6. Check the output
+### 2. Check the output
 
 Monitor results are saved to `output/v3_cached_monitor/<sample_name>/` by default, or `output/v2_adaptive_monitor/<sample_name>/` with `--live`:
 
@@ -275,7 +185,7 @@ Monitor results are saved to `output/v3_cached_monitor/<sample_name>/` by defaul
 | `summary_{sample}.json` | Per-sample sequence metadata (defect counts, timings, area savings, etc.) |
 | `batch_report.json` | Aggregate run statistics at the output-root level |
 
-### 7. Individual modules
+### 3. Individual modules
 
 Each module can be run standalone:
 
@@ -448,7 +358,7 @@ Bounding box coordinates `[x1, y1, x2, y2]` are in the raw image pixel space (54
 
 ## Research Papers & References
 
-The following papers from the CHAMP research group informed design decisions. See [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) Section 15 for detailed analysis.
+The following papers from the CHAMP research group informed design decisions.
 
 | Paper | Key Relevance |
 |---|---|
@@ -459,48 +369,4 @@ The following papers from the CHAMP research group informed design decisions. Se
 | MECH5080M Team Report 167 (2025) | Predecessor team: YOLOv11 outperforms YOLOv8 for segmentation masks. DBSCAN clustering. 3-class detection (over/under/debris). |
 | Green (2024) — *Laser Assisted Print Optimisation* | Laser point cloud quality metrics, auger screw rate optimisation, layer extraction algorithm. |
 
-## Current Status & Future Work
-
-### Implemented in software
-- Full pipeline: detect → map → generate → validate → overlay across all 120 samples
-- Per-defect three-phase repair G-code with ATC tool changes
-- IR drying (`M20`), configurable repair extrusion multiplier, and post-repair camera re-scan (`M311`) with retry hooks
-- 9-step adaptive monitor with cached canonical mode (`v3_cached_monitor`) and live YOLO comparison mode (`v2_adaptive_monitor`)
-- Duet handoff wrapper via `champ_integration.py` / `DuetHandoff`
-- Canonical benchmark: 90 repair layers, 310 defects, 93.7% mean area savings, 0 errors
-- Live comparison retained for analysis: 92 repair layers, 278 defects, 95.5% mean area savings, 0 errors
-- Process-time comparison model (`src/time_comparison.py`) + results analysis (`src/results_analysis.py`) producing all 12 report figures
-- Quantified crossover at ~15–20 defects where full-layer rework becomes faster than adaptive repair (mean 3.2 min saved / 37% per repair layer below crossover)
-
-### Individual Report (draft submitted 14 April 2026)
-- **Main body trimmed to 20 pages exactly** (template hard limit), references + appendices follow
-- Chapter intros, Ch4/Ch5 summaries, §4.5 crossover sensitivity analysis, §3.2 calibration uncertainty budget, §5.2 YOLO non-determinism + travel-crossover paragraphs all in place for Exceptional-band (75+) marking
-- `references.bib` cleaned (empty DOI fields removed, Harvard/natbib agsm style)
-- Build: `pdflatex main.tex` → `bibtex main` → `pdflatex × 2` (the VS Code LaTeX Workshop on-save hook handles this)
-- Report source lives in `Machine Learning In Advanced Manufacturing/Individual Report/`
-- **Close to final** — body is stable, still polishing figures (sizing / caption wording) before the final submission
-
-### Team Report (in progress, April 2026)
-- Lives in `Machine Learning In Advanced Manufacturing/Team Report/Team Report.docx`
-- IMRaD scaffold built: **1 Introduction → 2 Methods (2.1–2.4) → 3 Results (3.1–3.4) → 4 Discussion (4.1–4.4) → 5 Conclusion (5.1/5.2) → Acknowledgements → References (numbered, 8 pt)**
-- Dan's contribution (§2.4, §3.4, §4.4 — Localised Adaptive Repair) written at ~1120 words with editable OMML equations, pipeline figure, process-time figure, and aerial comparison (fig15 + fig16)
-- Section 1 Introduction written in CPP / last-year-report style (6 body paragraphs + 4 numbered workstream items)
-- Acknowledgements thanks Dr Robert Kay (supervisor) and Hydra (workshop support)
-- Body text forced to 11 pt throughout (Normal style inherits 12 pt, so every run has explicit `w:sz` applied)
-- **Still to do**: other members' §2.1–2.3, §3.1–3.3, §4.1–4.3 content; team-wide review pass on Dan's sections; combined abstract; final page-count trim
-
-### Team Presentation (starting now)
-- Source not yet created; slide deck will reuse the pipeline / aerial / area-savings / time-breakdown figures from the individual report
-- Priority after the team report body is stable
-
-### Ethics & Meeting Log (deferred)
-- Ethics forms in `Machine Learning In Advanced Manufacturing/Ethics/` — not yet reviewed this cycle
-- `Machine Learning In Advanced Manufacturing/Meeting Log.docx` — needs updating with April 2026 entries before final submission
-
-### Remaining technical work (post-draft)
-1. **Hardware commissioning**: validate staged repair-file execution on the CHAMP controller and confirm dust extraction, purge position, and final ATC / spindle settings.
-2. **Physical validation**: run real repair trials, tune the extrusion multiplier on hardware, and confirm repair quality with CT scanning (analogue of the 68% void reduction in Masters et al. 2025).
-3. **Calibration and optimisation**: replace the empirical `MM_PER_PIXEL` estimate with a physical calibration pattern, and implement a defect-density fallback to full-layer rework above the 15–20 defect crossover.
-4. **Model improvements**: consider YOLOv11 segmentation masks and a debris class for tighter, more selective repair geometry.
-
-See [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) for the full source-of-truth matrix, detailed integration notes, prioritised action items, and the **Section 19 — Next Session Handoff** brief.
+> **Note:** Files removed to align with report appendix requirements.
