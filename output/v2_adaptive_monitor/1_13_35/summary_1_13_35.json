@@ -1,0 +1,277 @@
+{
+  "sample": "1_13_35",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 18,
+  "overextrusions": 11,
+  "underextrusions": 7,
+  "decision": "adaptive_repair",
+  "repair_needed": true,
+  "inference_time_s": 1.546,
+  "total_time_s": 6.12,
+  "repair_strategy": {
+    "phase_1_mill_total": 18,
+    "phase_1_over_skim": 11,
+    "phase_1_under_cavity": 7,
+    "phase_2_deposit": 7
+  },
+  "gcode_lines": 390,
+  "validation": "PASS",
+  "tap_file": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080 - Team Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\GitHub\\output\\adaptive_monitor\\1_13_35\\repair_1_13_35.tap",
+  "repair_area_mm2": 165.6,
+  "area_savings_pct": 89.6,
+  "defects": [
+    {
+      "class": "Overextrusion",
+      "confidence": 0.902,
+      "bed_bbox": {
+        "x_min": -4.23,
+        "y_min": -14.07,
+        "x_max": 0.02,
+        "y_max": -10.92
+      },
+      "size_mm": {
+        "width": 4.25,
+        "height": 3.15
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8949,
+      "bed_bbox": {
+        "x_min": 13.56,
+        "y_min": -2.33,
+        "x_max": 17.37,
+        "y_max": 2.51
+      },
+      "size_mm": {
+        "width": 3.81,
+        "height": 4.83
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8925,
+      "bed_bbox": {
+        "x_min": 0.99,
+        "y_min": -19.33,
+        "x_max": 3.65,
+        "y_max": -16.66
+      },
+      "size_mm": {
+        "width": 2.65,
+        "height": 2.67
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8923,
+      "bed_bbox": {
+        "x_min": 15.01,
+        "y_min": 2.18,
+        "x_max": 17.39,
+        "y_max": 4.76
+      },
+      "size_mm": {
+        "width": 2.38,
+        "height": 2.58
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.891,
+      "bed_bbox": {
+        "x_min": 13.17,
+        "y_min": 14.35,
+        "x_max": 16.56,
+        "y_max": 17.09
+      },
+      "size_mm": {
+        "width": 3.38,
+        "height": 2.73
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8897,
+      "bed_bbox": {
+        "x_min": 14.86,
+        "y_min": 12.45,
+        "x_max": 17.39,
+        "y_max": 14.8
+      },
+      "size_mm": {
+        "width": 2.53,
+        "height": 2.35
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8866,
+      "bed_bbox": {
+        "x_min": -19.5,
+        "y_min": -7.73,
+        "x_max": -17.13,
+        "y_max": -5.27
+      },
+      "size_mm": {
+        "width": 2.37,
+        "height": 2.46
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8819,
+      "bed_bbox": {
+        "x_min": -2.39,
+        "y_min": -19.5,
+        "x_max": 0.18,
+        "y_max": -16.57
+      },
+      "size_mm": {
+        "width": 2.57,
+        "height": 2.93
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8792,
+      "bed_bbox": {
+        "x_min": 14.6,
+        "y_min": 8.8,
+        "x_max": 17.6,
+        "y_max": 11.8
+      },
+      "size_mm": {
+        "width": 3.0,
+        "height": 3.0
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8786,
+      "bed_bbox": {
+        "x_min": 11.01,
+        "y_min": 14.91,
+        "x_max": 13.83,
+        "y_max": 17.22
+      },
+      "size_mm": {
+        "width": 2.83,
+        "height": 2.31
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8741,
+      "bed_bbox": {
+        "x_min": 17.07,
+        "y_min": -4.93,
+        "x_max": 19.92,
+        "y_max": -1.44
+      },
+      "size_mm": {
+        "width": 2.85,
+        "height": 3.49
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8714,
+      "bed_bbox": {
+        "x_min": -16.81,
+        "y_min": -15.24,
+        "x_max": -14.49,
+        "y_max": -12.42
+      },
+      "size_mm": {
+        "width": 2.32,
+        "height": 2.82
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8711,
+      "bed_bbox": {
+        "x_min": 14.22,
+        "y_min": 4.99,
+        "x_max": 17.29,
+        "y_max": 8.48
+      },
+      "size_mm": {
+        "width": 3.07,
+        "height": 3.49
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8677,
+      "bed_bbox": {
+        "x_min": 4.18,
+        "y_min": -19.31,
+        "x_max": 6.96,
+        "y_max": -16.57
+      },
+      "size_mm": {
+        "width": 2.78,
+        "height": 2.74
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8642,
+      "bed_bbox": {
+        "x_min": -10.09,
+        "y_min": -17.22,
+        "x_max": -5.86,
+        "y_max": -13.4
+      },
+      "size_mm": {
+        "width": 4.22,
+        "height": 3.82
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8581,
+      "bed_bbox": {
+        "x_min": 10.76,
+        "y_min": -19.34,
+        "x_max": 13.86,
+        "y_max": -16.67
+      },
+      "size_mm": {
+        "width": 3.1,
+        "height": 2.67
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.8551,
+      "bed_bbox": {
+        "x_min": -16.92,
+        "y_min": -11.83,
+        "x_max": -14.64,
+        "y_max": -8.97
+      },
+      "size_mm": {
+        "width": 2.28,
+        "height": 2.86
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.8529,
+      "bed_bbox": {
+        "x_min": -6.13,
+        "y_min": -17.1,
+        "x_max": -2.6,
+        "y_max": -14.05
+      },
+      "size_mm": {
+        "width": 3.53,
+        "height": 3.05
+      }
+    }
+  ]
+}

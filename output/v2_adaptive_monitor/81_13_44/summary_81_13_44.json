@@ -1,0 +1,67 @@
+{
+  "sample": "81_13_44",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 3,
+  "overextrusions": 0,
+  "underextrusions": 3,
+  "decision": "adaptive_repair",
+  "repair_needed": true,
+  "inference_time_s": 1.556,
+  "total_time_s": 5.2,
+  "repair_strategy": {
+    "phase_1_mill_total": 3,
+    "phase_1_over_skim": 0,
+    "phase_1_under_cavity": 3,
+    "phase_2_deposit": 3
+  },
+  "gcode_lines": 169,
+  "validation": "PASS",
+  "tap_file": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080 - Team Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\GitHub\\output\\adaptive_monitor\\81_13_44\\repair_81_13_44.tap",
+  "repair_area_mm2": 116.31,
+  "area_savings_pct": 92.7,
+  "defects": [
+    {
+      "class": "Underextrusion",
+      "confidence": 0.9258,
+      "bed_bbox": {
+        "x_min": 4.98,
+        "y_min": -5.1,
+        "x_max": 9.14,
+        "y_max": -0.66
+      },
+      "size_mm": {
+        "width": 4.16,
+        "height": 4.45
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.9126,
+      "bed_bbox": {
+        "x_min": -2.62,
+        "y_min": -7.3,
+        "x_max": 4.9,
+        "y_max": 1.51
+      },
+      "size_mm": {
+        "width": 7.52,
+        "height": 8.82
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.861,
+      "bed_bbox": {
+        "x_min": -3.95,
+        "y_min": -5.49,
+        "x_max": 1.66,
+        "y_max": 0.11
+      },
+      "size_mm": {
+        "width": 5.61,
+        "height": 5.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "sample": "41_17_12",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 0,
+  "overextrusions": 0,
+  "underextrusions": 0,
+  "decision": "continue",
+  "repair_needed": false,
+  "inference_time_s": 1.374,
+  "total_time_s": 1.414
+}

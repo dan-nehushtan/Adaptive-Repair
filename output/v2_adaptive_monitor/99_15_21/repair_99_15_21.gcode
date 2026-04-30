@@ -1,0 +1,540 @@
+; ============================================================
+; ADAPTIVE REPAIR G-CODE
+; Layer 0   Z=0.400 mm
+; Defects: 16
+; ============================================================
+
+G21          ; millimetres
+G90          ; absolute positioning
+G58          ; work coordinate system
+G92 A0
+
+; 
+; >>> PICKING UP MILLING TOOL
+; --- TOOL CHANGE: milling tool ---
+G1 Z50.000 F600
+G0 X0.000 Y0.000 F7800
+M6 T1  ; pick up milling tool
+; Tool T1 loaded
+M3 S1000  ; spindle on
+
+; 
+; >>> PHASE 1: MILL ALL BOUNDING BOXES (16)
+;     Overextrusion  : 2 regions (skim excess)
+;     Underextrusion : 14 regions (cut clean cavity)
+;     Travel optimised: 340.6 -> 160.8 mm (53% saved)
+; 
+; --- Mill cavity: Underextrusion  conf=0.88 ---
+;     bed region: (1.07,-1.08) -> (4.11,1.93)
+G1 Z2.400 F600
+G0 X1.075 Y-1.083 F7800
+G1 Z0.400 F600
+G1 X4.112 Y-1.083 F200
+G1 X4.112 Y0.150 F200
+G1 X1.075 Y0.150 F200
+G1 X1.075 Y1.383 F200
+G1 X4.112 Y1.383 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.92 ---
+;     bed region: (-5.40,-7.58) -> (-0.36,-2.54)
+G1 Z2.400 F600
+G0 X-5.405 Y-7.580 F7800
+G1 Z0.400 F600
+G1 X-0.363 Y-7.580 F200
+G1 X-0.363 Y-6.347 F200
+G1 X-5.405 Y-6.347 F200
+G1 X-5.405 Y-5.114 F200
+G1 X-0.363 Y-5.114 F200
+G1 X-0.363 Y-3.881 F200
+G1 X-5.405 Y-3.881 F200
+G1 X-5.405 Y-2.648 F200
+G1 X-0.363 Y-2.648 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.91 ---
+;     bed region: (-9.65,-11.74) -> (-6.01,-8.21)
+G1 Z2.400 F600
+G0 X-9.646 Y-11.740 F7800
+G1 Z0.400 F600
+G1 X-6.009 Y-11.740 F200
+G1 X-6.009 Y-10.507 F200
+G1 X-9.646 Y-10.507 F200
+G1 X-9.646 Y-9.274 F200
+G1 X-6.009 Y-9.274 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.94 ---
+;     bed region: (-15.14,-9.32) -> (-5.89,0.12)
+G1 Z2.400 F600
+G0 X-15.140 Y-9.317 F7800
+G1 Z0.400 F600
+G1 X-5.890 Y-9.317 F200
+G1 X-5.890 Y-8.084 F200
+G1 X-15.140 Y-8.084 F200
+G1 X-15.140 Y-6.851 F200
+G1 X-5.890 Y-6.851 F200
+G1 X-5.890 Y-5.618 F200
+G1 X-15.140 Y-5.618 F200
+G1 X-15.140 Y-4.385 F200
+G1 X-5.890 Y-4.385 F200
+G1 X-5.890 Y-3.152 F200
+G1 X-15.140 Y-3.152 F200
+G1 X-15.140 Y-1.919 F200
+G1 X-5.890 Y-1.919 F200
+G1 X-5.890 Y-0.686 F200
+G1 X-15.140 Y-0.686 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.90 ---
+;     bed region: (-18.03,-12.03) -> (-15.78,-9.63)
+G1 Z2.400 F600
+G0 X-18.025 Y-12.034 F7800
+G1 Z0.400 F600
+G1 X-15.781 Y-12.034 F200
+G1 X-15.781 Y-10.801 F200
+G1 X-18.025 Y-10.801 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.87 ---
+;     bed region: (-17.98,-15.12) -> (-16.05,-13.02)
+G1 Z2.400 F600
+G0 X-17.983 Y-15.122 F7800
+G1 Z0.400 F600
+G1 X-16.052 Y-15.122 F200
+G1 X-16.052 Y-13.889 F200
+G1 X-17.983 Y-13.889 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.86 ---
+;     bed region: (-14.45,-17.17) -> (-11.63,-15.06)
+G1 Z2.400 F600
+G0 X-14.449 Y-17.170 F7800
+G1 Z0.400 F600
+G1 X-11.630 Y-17.170 F200
+G1 X-11.630 Y-15.937 F200
+G1 X-14.449 Y-15.937 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.88 ---
+;     bed region: (-11.27,-17.33) -> (-8.67,-14.56)
+G1 Z2.400 F600
+G0 X-11.272 Y-17.325 F7800
+G1 Z0.400 F600
+G1 X-8.665 Y-17.325 F200
+G1 X-8.665 Y-16.092 F200
+G1 X-11.272 Y-16.092 F200
+G1 X-11.272 Y-14.859 F200
+G1 X-8.665 Y-14.859 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill skim: Overextrusion  conf=0.86 ---
+;     bed region: (5.29,-17.54) -> (7.87,-15.36)
+G1 Z2.400 F600
+G0 X5.290 Y-17.540 F7800
+G1 Z0.400 F600
+G1 X7.871 Y-17.540 F200
+G1 X7.871 Y-16.307 F200
+G1 X5.290 Y-16.307 F200
+G1 Z2.400 F600
+; --- end mill skim ---
+
+; --- Mill cavity: Underextrusion  conf=0.93 ---
+;     bed region: (8.10,-14.08) -> (18.02,-3.53)
+G1 Z2.400 F600
+G0 X8.097 Y-14.077 F7800
+G1 Z0.400 F600
+G1 X18.022 Y-14.077 F200
+G1 X18.022 Y-12.844 F200
+G1 X8.097 Y-12.844 F200
+G1 X8.097 Y-11.611 F200
+G1 X18.022 Y-11.611 F200
+G1 X18.022 Y-10.378 F200
+G1 X8.097 Y-10.378 F200
+G1 X8.097 Y-9.145 F200
+G1 X18.022 Y-9.145 F200
+G1 X18.022 Y-7.912 F200
+G1 X8.097 Y-7.912 F200
+G1 X8.097 Y-6.679 F200
+G1 X18.022 Y-6.679 F200
+G1 X18.022 Y-5.446 F200
+G1 X8.097 Y-5.446 F200
+G1 X8.097 Y-4.213 F200
+G1 X18.022 Y-4.213 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.88 ---
+;     bed region: (9.38,7.28) -> (12.89,10.81)
+G1 Z2.400 F600
+G0 X9.378 Y7.282 F7800
+G1 Z0.400 F600
+G1 X12.889 Y7.282 F200
+G1 X12.889 Y8.515 F200
+G1 X9.378 Y8.515 F200
+G1 X9.378 Y9.748 F200
+G1 X12.889 Y9.748 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.86 ---
+;     bed region: (15.54,10.35) -> (17.91,12.99)
+G1 Z2.400 F600
+G0 X15.535 Y10.348 F7800
+G1 Z0.400 F600
+G1 X17.914 Y10.348 F200
+G1 X17.914 Y11.581 F200
+G1 X15.535 Y11.581 F200
+G1 X15.535 Y12.814 F200
+G1 X17.914 Y12.814 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.87 ---
+;     bed region: (11.36,16.22) -> (13.24,18.03)
+G1 Z2.400 F600
+G0 X11.364 Y16.218 F7800
+G1 Z0.400 F600
+G1 X13.242 Y16.218 F200
+G1 X13.242 Y17.451 F200
+G1 X11.364 Y17.451 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.86 ---
+;     bed region: (8.39,16.35) -> (10.19,18.05)
+G1 Z2.400 F600
+G0 X8.390 Y16.349 F7800
+G1 Z0.400 F600
+G1 X10.195 Y16.349 F200
+G1 X10.195 Y17.582 F200
+G1 X8.390 Y17.582 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill cavity: Underextrusion  conf=0.92 ---
+;     bed region: (-2.13,4.10) -> (10.01,15.96)
+G1 Z2.400 F600
+G0 X-2.127 Y4.100 F7800
+G1 Z0.400 F600
+G1 X10.010 Y4.100 F200
+G1 X10.010 Y5.333 F200
+G1 X-2.127 Y5.333 F200
+G1 X-2.127 Y6.566 F200
+G1 X10.010 Y6.566 F200
+G1 X10.010 Y7.799 F200
+G1 X-2.127 Y7.799 F200
+G1 X-2.127 Y9.032 F200
+G1 X10.010 Y9.032 F200
+G1 X10.010 Y10.265 F200
+G1 X-2.127 Y10.265 F200
+G1 X-2.127 Y11.498 F200
+G1 X10.010 Y11.498 F200
+G1 X10.010 Y12.731 F200
+G1 X-2.127 Y12.731 F200
+G1 X-2.127 Y13.964 F200
+G1 X10.010 Y13.964 F200
+G1 X10.010 Y15.197 F200
+G1 X-2.127 Y15.197 F200
+G1 Z2.400 F600
+; --- end mill cavity ---
+
+; --- Mill skim: Overextrusion  conf=0.89 ---
+;     bed region: (-28.42,-28.48) -> (-25.15,-25.22)
+G1 Z2.400 F600
+G0 X-28.419 Y-28.475 F7800
+G1 Z0.400 F600
+G1 X-25.154 Y-28.475 F200
+G1 X-25.154 Y-27.242 F200
+G1 X-28.419 Y-27.242 F200
+G1 X-28.419 Y-26.009 F200
+G1 X-25.154 Y-26.009 F200
+G1 Z2.400 F600
+; --- end mill skim ---
+
+G1 Z2.400 F600
+M5  ; spindle off after milling
+; --- Phase 1 complete: all regions milled ---
+
+; >>> RETURNING MILL, PICKING UP NOZZLE FOR DEPOSITION
+M5  ; spindle off
+; --- TOOL CHANGE: ceramic nozzle ---
+G1 Z50.000 F600
+G0 X0.000 Y0.000 F7800
+M6 T0  ; pick up ceramic nozzle
+; Tool T0 loaded
+G92 A0
+
+; 
+; >>> PHASE 2: DEPOSIT INTO UNDEREXTRUSION CAVITIES (14)
+;     Fill milled cavities with ceramic
+;     Travel optimised: 274.5 -> 116.1 mm (58% saved)
+; 
+M14  ; purge nozzle
+
+; --- Underextrusion repair  conf=0.87 ---
+;     bed region: (-17.98,-15.12) -> (-16.05,-13.02)
+G1 A0.00000 F60
+G1 Z2.400 F600
+G0 X-17.983 Y-15.122 F7800
+G1 Z0.400 F600
+G1 A0.00000 F60
+G1 X-16.052 Y-15.122 A0.00082 F300
+G1 X-16.052 Y-13.889 F7800
+G1 X-17.983 Y-13.889 A0.00164 F300
+G1 A0.00164 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.90 ---
+;     bed region: (-18.03,-12.03) -> (-15.78,-9.63)
+G1 A0.00164 F60
+G1 Z2.400 F600
+G0 X-18.025 Y-12.034 F7800
+G1 Z0.400 F600
+G1 A0.00164 F60
+G1 X-15.781 Y-12.034 A0.00260 F300
+G1 X-15.781 Y-10.801 F7800
+G1 X-18.025 Y-10.801 A0.00355 F300
+G1 A0.00355 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.86 ---
+;     bed region: (-14.45,-17.17) -> (-11.63,-15.06)
+G1 A0.00355 F60
+G1 Z2.400 F600
+G0 X-14.449 Y-17.170 F7800
+G1 Z0.400 F600
+G1 A0.00355 F60
+G1 X-11.630 Y-17.170 A0.00475 F300
+G1 X-11.630 Y-15.937 F7800
+G1 X-14.449 Y-15.937 A0.00595 F300
+G1 A0.00595 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.88 ---
+;     bed region: (-11.27,-17.33) -> (-8.67,-14.56)
+G1 A0.00595 F60
+G1 Z2.400 F600
+G0 X-11.272 Y-17.325 F7800
+G1 Z0.400 F600
+G1 A0.00595 F60
+G1 X-8.665 Y-17.325 A0.00706 F300
+G1 X-8.665 Y-16.092 F7800
+G1 X-11.272 Y-16.092 A0.00817 F300
+G1 X-11.272 Y-14.859 F7800
+G1 X-8.665 Y-14.859 A0.00928 F300
+G1 A0.00928 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.91 ---
+;     bed region: (-9.65,-11.74) -> (-6.01,-8.21)
+G1 A0.00928 F60
+G1 Z2.400 F600
+G0 X-9.646 Y-11.740 F7800
+G1 Z0.400 F600
+G1 A0.00928 F60
+G1 X-6.009 Y-11.740 A0.01082 F300
+G1 X-6.009 Y-10.507 F7800
+G1 X-9.646 Y-10.507 A0.01237 F300
+G1 X-9.646 Y-9.274 F7800
+G1 X-6.009 Y-9.274 A0.01392 F300
+G1 A0.01392 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.94 ---
+;     bed region: (-15.14,-9.32) -> (-5.89,0.12)
+G1 A0.01392 F60
+G1 Z2.400 F600
+G0 X-15.140 Y-9.317 F7800
+G1 Z0.400 F600
+G1 A0.01392 F60
+G1 X-5.890 Y-9.317 A0.01785 F300
+G1 X-5.890 Y-8.084 F7800
+G1 X-15.140 Y-8.084 A0.02179 F300
+G1 X-15.140 Y-6.851 F7800
+G1 X-5.890 Y-6.851 A0.02572 F300
+G1 X-5.890 Y-5.618 F7800
+G1 X-15.140 Y-5.618 A0.02966 F300
+G1 X-15.140 Y-4.385 F7800
+G1 X-5.890 Y-4.385 A0.03359 F300
+G1 X-5.890 Y-3.152 F7800
+G1 X-15.140 Y-3.152 A0.03753 F300
+G1 X-15.140 Y-1.919 F7800
+G1 X-5.890 Y-1.919 A0.04146 F300
+G1 X-5.890 Y-0.686 F7800
+G1 X-15.140 Y-0.686 A0.04540 F300
+G1 A0.04540 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.92 ---
+;     bed region: (-5.40,-7.58) -> (-0.36,-2.54)
+G1 A0.04540 F60
+G1 Z2.400 F600
+G0 X-5.405 Y-7.580 F7800
+G1 Z0.400 F600
+G1 A0.04540 F60
+G1 X-0.363 Y-7.580 A0.04754 F300
+G1 X-0.363 Y-6.347 F7800
+G1 X-5.405 Y-6.347 A0.04969 F300
+G1 X-5.405 Y-5.114 F7800
+G1 X-0.363 Y-5.114 A0.05183 F300
+G1 X-0.363 Y-3.881 F7800
+G1 X-5.405 Y-3.881 A0.05398 F300
+G1 X-5.405 Y-2.648 F7800
+G1 X-0.363 Y-2.648 A0.05612 F300
+G1 A0.05612 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.88 ---
+;     bed region: (1.07,-1.08) -> (4.11,1.93)
+G1 A0.05612 F60
+G1 Z2.400 F600
+G0 X1.075 Y-1.083 F7800
+G1 Z0.400 F600
+G1 A0.05612 F60
+G1 X4.112 Y-1.083 A0.05741 F300
+G1 X4.112 Y0.150 F7800
+G1 X1.075 Y0.150 A0.05870 F300
+G1 X1.075 Y1.383 F7800
+G1 X4.112 Y1.383 A0.06000 F300
+G1 A0.06000 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.92 ---
+;     bed region: (-2.13,4.10) -> (10.01,15.96)
+G1 A0.06000 F60
+G1 Z2.400 F600
+G0 X-2.127 Y4.100 F7800
+G1 Z0.400 F600
+G1 A0.06000 F60
+G1 X10.010 Y4.100 A0.06516 F300
+G1 X10.010 Y5.333 F7800
+G1 X-2.127 Y5.333 A0.07032 F300
+G1 X-2.127 Y6.566 F7800
+G1 X10.010 Y6.566 A0.07549 F300
+G1 X10.010 Y7.799 F7800
+G1 X-2.127 Y7.799 A0.08065 F300
+G1 X-2.127 Y9.032 F7800
+G1 X10.010 Y9.032 A0.08581 F300
+G1 X10.010 Y10.265 F7800
+G1 X-2.127 Y10.265 A0.09097 F300
+G1 X-2.127 Y11.498 F7800
+G1 X10.010 Y11.498 A0.09614 F300
+G1 X10.010 Y12.731 F7800
+G1 X-2.127 Y12.731 A0.10130 F300
+G1 X-2.127 Y13.964 F7800
+G1 X10.010 Y13.964 A0.10646 F300
+G1 X10.010 Y15.197 F7800
+G1 X-2.127 Y15.197 A0.11163 F300
+G1 A0.11163 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.88 ---
+;     bed region: (9.38,7.28) -> (12.89,10.81)
+G1 A0.11163 F60
+G1 Z2.400 F600
+G0 X9.378 Y7.282 F7800
+G1 Z0.400 F600
+G1 A0.11163 F60
+G1 X12.889 Y7.282 A0.11312 F300
+G1 X12.889 Y8.515 F7800
+G1 X9.378 Y8.515 A0.11461 F300
+G1 X9.378 Y9.748 F7800
+G1 X12.889 Y9.748 A0.11611 F300
+G1 A0.11611 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.86 ---
+;     bed region: (15.54,10.35) -> (17.91,12.99)
+G1 A0.11611 F60
+G1 Z2.400 F600
+G0 X15.535 Y10.348 F7800
+G1 Z0.400 F600
+G1 A0.11611 F60
+G1 X17.914 Y10.348 A0.11712 F300
+G1 X17.914 Y11.581 F7800
+G1 X15.535 Y11.581 A0.11813 F300
+G1 X15.535 Y12.814 F7800
+G1 X17.914 Y12.814 A0.11914 F300
+G1 A0.11914 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.87 ---
+;     bed region: (11.36,16.22) -> (13.24,18.03)
+G1 A0.11914 F60
+G1 Z2.400 F600
+G0 X11.364 Y16.218 F7800
+G1 Z0.400 F600
+G1 A0.11914 F60
+G1 X13.242 Y16.218 A0.11994 F300
+G1 X13.242 Y17.451 F7800
+G1 X11.364 Y17.451 A0.12074 F300
+G1 A0.12074 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.86 ---
+;     bed region: (8.39,16.35) -> (10.19,18.05)
+G1 A0.12074 F60
+G1 Z2.400 F600
+G0 X8.390 Y16.349 F7800
+G1 Z0.400 F600
+G1 A0.12074 F60
+G1 X10.195 Y16.349 A0.12151 F300
+G1 X10.195 Y17.582 F7800
+G1 X8.390 Y17.582 A0.12228 F300
+G1 A0.12228 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Underextrusion repair  conf=0.93 ---
+;     bed region: (8.10,-14.08) -> (18.02,-3.53)
+G1 A0.12228 F60
+G1 Z2.400 F600
+G0 X8.097 Y-14.077 F7800
+G1 Z0.400 F600
+G1 A0.12228 F60
+G1 X18.022 Y-14.077 A0.12650 F300
+G1 X18.022 Y-12.844 F7800
+G1 X8.097 Y-12.844 A0.13072 F300
+G1 X8.097 Y-11.611 F7800
+G1 X18.022 Y-11.611 A0.13494 F300
+G1 X18.022 Y-10.378 F7800
+G1 X8.097 Y-10.378 A0.13916 F300
+G1 X8.097 Y-9.145 F7800
+G1 X18.022 Y-9.145 A0.14339 F300
+G1 X18.022 Y-7.912 F7800
+G1 X8.097 Y-7.912 A0.14761 F300
+G1 X8.097 Y-6.679 F7800
+G1 X18.022 Y-6.679 A0.15183 F300
+G1 X18.022 Y-5.446 F7800
+G1 X8.097 Y-5.446 A0.15605 F300
+G1 X8.097 Y-4.213 F7800
+G1 X18.022 Y-4.213 A0.16027 F300
+G1 A0.16027 F60
+G1 Z2.400 F600
+; --- end underextrusion repair ---
+
+; --- Repair complete ---
+G0 Z5.400 F7800
+G0 X0.000 Y0.000 F7800
+M2  ; program end

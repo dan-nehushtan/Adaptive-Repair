@@ -1,0 +1,15 @@
+{
+  "sample": "1_13_35",
+  "timestamp": "20260220_162434",
+  "z": 0.4,
+  "confidence": 0.85,
+  "am_gcode": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080 - Team Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\GitHub\\Data\\GCODEs\\Compiled GCODEs\\1_comp.tap",
+  "image": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080 - Team Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\GitHub\\Data\\Lvl 4 Project Data\\1_13_35\\Camera\\image_11_12_24_13_42_08.bmp",
+  "defects_found": 18,
+  "overextrusions": 11,
+  "underextrusions": 7,
+  "status": "repair_generated",
+  "repair_needed": true,
+  "tap_file": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080 - Team Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\GitHub\\output\\1_13_35\\repair_1_13_35_layer0.tap",
+  "total_time_s": 7.9
+}

@@ -1,0 +1,491 @@
+{
+  "sample": "92_14_48",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 33,
+  "overextrusions": 0,
+  "underextrusions": 33,
+  "decision": "adaptive_repair",
+  "repair_needed": true,
+  "inference_time_s": 0.013,
+  "total_time_s": 3.917,
+  "repair_strategy": {
+    "phase_1_mill_total": 33,
+    "phase_1_over_skim": 0,
+    "phase_1_under_cavity": 33,
+    "phase_2_deposit": 33,
+    "ir_dry_s": 60,
+    "extrusion_multiplier": 1.0,
+    "repair_attempts": 1,
+    "max_retries": 2
+  },
+  "gcode_lines": 1374,
+  "validation": "PASS",
+  "tap_file": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080-Team-Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\output\\v3_cached_monitor\\92_14_48\\repair_92_14_48.tap",
+  "repair_area_mm2": 2410.69,
+  "area_savings_pct": -50.7,
+  "defects": [
+    {
+      "class": "Underextrusion",
+      "confidence": 0.96,
+      "bed_bbox": {
+        "x_min": -14.24,
+        "y_min": -14.89,
+        "x_max": -5.21,
+        "y_max": -5.77
+      },
+      "size_mm": {
+        "width": 9.03,
+        "height": 9.12
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.96,
+      "bed_bbox": {
+        "x_min": -4.47,
+        "y_min": -4.98,
+        "x_max": 12.02,
+        "y_max": 11.4
+      },
+      "size_mm": {
+        "width": 16.49,
+        "height": 16.38
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.96,
+      "bed_bbox": {
+        "x_min": -14.34,
+        "y_min": 1.6,
+        "x_max": -7.03,
+        "y_max": 8.79
+      },
+      "size_mm": {
+        "width": 7.32,
+        "height": 7.2
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.96,
+      "bed_bbox": {
+        "x_min": -9.53,
+        "y_min": 8.11,
+        "x_max": -2.44,
+        "y_max": 15.06
+      },
+      "size_mm": {
+        "width": 7.09,
+        "height": 6.95
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.96,
+      "bed_bbox": {
+        "x_min": -15.03,
+        "y_min": -5.93,
+        "x_max": -2.06,
+        "y_max": 7.19
+      },
+      "size_mm": {
+        "width": 12.97,
+        "height": 13.11
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.95,
+      "bed_bbox": {
+        "x_min": -16.41,
+        "y_min": 4.45,
+        "x_max": -5.82,
+        "y_max": 15.04
+      },
+      "size_mm": {
+        "width": 10.59,
+        "height": 10.59
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.95,
+      "bed_bbox": {
+        "x_min": 7.2,
+        "y_min": 0.06,
+        "x_max": 13.35,
+        "y_max": 6.15
+      },
+      "size_mm": {
+        "width": 6.14,
+        "height": 6.09
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.94,
+      "bed_bbox": {
+        "x_min": 5.35,
+        "y_min": 1.51,
+        "x_max": 12.02,
+        "y_max": 8.18
+      },
+      "size_mm": {
+        "width": 6.67,
+        "height": 6.67
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.94,
+      "bed_bbox": {
+        "x_min": -15.01,
+        "y_min": -9.06,
+        "x_max": -10.26,
+        "y_max": -4.33
+      },
+      "size_mm": {
+        "width": 4.75,
+        "height": 4.73
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.92,
+      "bed_bbox": {
+        "x_min": -15.08,
+        "y_min": 10.63,
+        "x_max": -10.65,
+        "y_max": 14.97
+      },
+      "size_mm": {
+        "width": 4.43,
+        "height": 4.34
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.91,
+      "bed_bbox": {
+        "x_min": 14.8,
+        "y_min": -6.91,
+        "x_max": 18.33,
+        "y_max": -3.61
+      },
+      "size_mm": {
+        "width": 3.54,
+        "height": 3.29
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.91,
+      "bed_bbox": {
+        "x_min": -2.53,
+        "y_min": 5.28,
+        "x_max": 1.29,
+        "y_max": 8.94
+      },
+      "size_mm": {
+        "width": 3.82,
+        "height": 3.66
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.9,
+      "bed_bbox": {
+        "x_min": -3.0,
+        "y_min": -16.86,
+        "x_max": 12.77,
+        "y_max": -0.99
+      },
+      "size_mm": {
+        "width": 15.77,
+        "height": 15.88
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.9,
+      "bed_bbox": {
+        "x_min": -15.03,
+        "y_min": -2.32,
+        "x_max": -4.3,
+        "y_max": 8.11
+      },
+      "size_mm": {
+        "width": 10.73,
+        "height": 10.43
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.9,
+      "bed_bbox": {
+        "x_min": 2.56,
+        "y_min": 8.65,
+        "x_max": 6.08,
+        "y_max": 12.07
+      },
+      "size_mm": {
+        "width": 3.52,
+        "height": 3.41
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.89,
+      "bed_bbox": {
+        "x_min": -14.9,
+        "y_min": -12.37,
+        "x_max": 7.31,
+        "y_max": 9.41
+      },
+      "size_mm": {
+        "width": 22.21,
+        "height": 21.77
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.87,
+      "bed_bbox": {
+        "x_min": 16.42,
+        "y_min": -12.33,
+        "x_max": 18.28,
+        "y_max": -10.16
+      },
+      "size_mm": {
+        "width": 1.86,
+        "height": 2.17
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.87,
+      "bed_bbox": {
+        "x_min": 16.37,
+        "y_min": -9.06,
+        "x_max": 18.3,
+        "y_max": -6.83
+      },
+      "size_mm": {
+        "width": 1.93,
+        "height": 2.23
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.87,
+      "bed_bbox": {
+        "x_min": -7.87,
+        "y_min": -11.68,
+        "x_max": 3.76,
+        "y_max": -0.11
+      },
+      "size_mm": {
+        "width": 11.62,
+        "height": 11.57
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.87,
+      "bed_bbox": {
+        "x_min": -14.29,
+        "y_min": -18.33,
+        "x_max": -12.17,
+        "y_max": -16.48
+      },
+      "size_mm": {
+        "width": 2.12,
+        "height": 1.86
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -7.71,
+        "y_min": -18.32,
+        "x_max": -5.61,
+        "y_max": -16.44
+      },
+      "size_mm": {
+        "width": 2.1,
+        "height": 1.88
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 8.64,
+        "y_min": -18.25,
+        "x_max": 10.86,
+        "y_max": -16.27
+      },
+      "size_mm": {
+        "width": 2.22,
+        "height": 1.98
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 16.34,
+        "y_min": -2.53,
+        "x_max": 18.37,
+        "y_max": -0.29
+      },
+      "size_mm": {
+        "width": 2.03,
+        "height": 2.24
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -11.02,
+        "y_min": -18.3,
+        "x_max": -8.97,
+        "y_max": -16.46
+      },
+      "size_mm": {
+        "width": 2.05,
+        "height": 1.84
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 16.49,
+        "y_min": 4.1,
+        "x_max": 18.3,
+        "y_max": 6.19
+      },
+      "size_mm": {
+        "width": 1.8,
+        "height": 2.09
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 11.94,
+        "y_min": -18.23,
+        "x_max": 14.12,
+        "y_max": -16.32
+      },
+      "size_mm": {
+        "width": 2.17,
+        "height": 1.91
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 5.42,
+        "y_min": -18.21,
+        "x_max": 7.57,
+        "y_max": -16.28
+      },
+      "size_mm": {
+        "width": 2.15,
+        "height": 1.93
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -4.46,
+        "y_min": -18.35,
+        "x_max": -2.27,
+        "y_max": -16.32
+      },
+      "size_mm": {
+        "width": 2.19,
+        "height": 2.03
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -1.53,
+        "y_min": 16.34,
+        "x_max": 0.46,
+        "y_max": 18.21
+      },
+      "size_mm": {
+        "width": 2.0,
+        "height": 1.88
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -6.94,
+        "y_min": -16.81,
+        "x_max": 14.94,
+        "y_max": 4.77
+      },
+      "size_mm": {
+        "width": 21.88,
+        "height": 21.58
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": 5.07,
+        "y_min": 16.41,
+        "x_max": 7.01,
+        "y_max": 18.26
+      },
+      "size_mm": {
+        "width": 1.95,
+        "height": 1.86
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.85,
+      "bed_bbox": {
+        "x_min": 16.46,
+        "y_min": 0.81,
+        "x_max": 18.32,
+        "y_max": 2.97
+      },
+      "size_mm": {
+        "width": 1.86,
+        "height": 2.16
+      }
+    },
+    {
+      "class": "Underextrusion",
+      "confidence": 0.85,
+      "bed_bbox": {
+        "x_min": 16.53,
+        "y_min": 7.38,
+        "x_max": 18.28,
+        "y_max": 9.43
+      },
+      "size_mm": {
+        "width": 1.75,
+        "height": 2.05
+      }
+    }
+  ]
+}

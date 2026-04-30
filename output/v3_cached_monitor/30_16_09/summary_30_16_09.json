@@ -1,0 +1,99 @@
+{
+  "sample": "30_16_09",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 5,
+  "overextrusions": 5,
+  "underextrusions": 0,
+  "decision": "adaptive_repair",
+  "repair_needed": true,
+  "inference_time_s": 0.002,
+  "total_time_s": 4.048,
+  "repair_strategy": {
+    "phase_1_mill_total": 5,
+    "phase_1_over_skim": 5,
+    "phase_1_under_cavity": 0,
+    "phase_2_deposit": 0,
+    "ir_dry_s": 0,
+    "extrusion_multiplier": 1.0,
+    "repair_attempts": 1,
+    "max_retries": 2
+  },
+  "gcode_lines": 117,
+  "validation": "PASS",
+  "tap_file": "C:\\Users\\dnehu\\Documents\\University\\Year 4\\Engineering\\MECH5080-Team-Project\\Machine Learning In Advanced Manufacturing\\Adaptive Repair Strategies\\output\\v3_cached_monitor\\30_16_09\\repair_30_16_09.tap",
+  "repair_area_mm2": 49.75,
+  "area_savings_pct": 96.9,
+  "defects": [
+    {
+      "class": "Overextrusion",
+      "confidence": 0.94,
+      "bed_bbox": {
+        "x_min": -29.64,
+        "y_min": -29.95,
+        "x_max": -25.03,
+        "y_max": -25.38
+      },
+      "size_mm": {
+        "width": 4.61,
+        "height": 4.57
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.9,
+      "bed_bbox": {
+        "x_min": 6.89,
+        "y_min": 2.74,
+        "x_max": 9.18,
+        "y_max": 4.6
+      },
+      "size_mm": {
+        "width": 2.3,
+        "height": 1.86
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.89,
+      "bed_bbox": {
+        "x_min": 1.39,
+        "y_min": 4.14,
+        "x_max": 4.51,
+        "y_max": 6.42
+      },
+      "size_mm": {
+        "width": 3.12,
+        "height": 2.28
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.89,
+      "bed_bbox": {
+        "x_min": 0.64,
+        "y_min": -6.5,
+        "x_max": 3.02,
+        "y_max": -4.03
+      },
+      "size_mm": {
+        "width": 2.38,
+        "height": 2.47
+      }
+    },
+    {
+      "class": "Overextrusion",
+      "confidence": 0.86,
+      "bed_bbox": {
+        "x_min": -0.26,
+        "y_min": -11.51,
+        "x_max": 3.69,
+        "y_max": -8.6
+      },
+      "size_mm": {
+        "width": 3.94,
+        "height": 2.91
+      }
+    }
+  ]
+}

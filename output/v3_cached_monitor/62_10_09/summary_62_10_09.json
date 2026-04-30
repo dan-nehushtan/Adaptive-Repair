@@ -1,0 +1,12 @@
+{
+  "sample": "62_10_09",
+  "z_height": 0.4,
+  "confidence_threshold": 0.85,
+  "defects_found": 0,
+  "overextrusions": 0,
+  "underextrusions": 0,
+  "decision": "continue",
+  "repair_needed": false,
+  "inference_time_s": 0.001,
+  "total_time_s": 0.021
+}

@@ -1,0 +1,5 @@
+Validation: PASS
+  Lines parsed     : 91
+  Motion commands   : 40  (extrusion=9, travel=31)
+  Bounding box (mm) : X[0.00, 15.45]  Y[-15.21, 0.00]  Z[0.40, 50.00]
+  Issues            : 0 errors, 0 warnings, 0 info
